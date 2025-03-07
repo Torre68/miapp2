@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Libro } from '../libro';
 import { FormsModule } from '@angular/forms';
+import { LibroRestService } from '../libro-rest.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-formulario-libro',
@@ -12,9 +14,17 @@ export class FormularioLibroComponent {
 
   libro:Libro = {} as Libro;
  // {} SIGNIFICA OBJETO VACIO
-  public insertar (){
 
-    console.log(this.libro);
+ constructor(private libroRestService:LibroRestService, private router:Router) {
+
+ }
+  public insertar (){
+    
+
+    this.libroRestService.insertar(this.libro).subscribe((datos)=>{
+      console.log("insertado");
+      this.router.navigate(["/listalibros"]);
+    })
   }
 
 }

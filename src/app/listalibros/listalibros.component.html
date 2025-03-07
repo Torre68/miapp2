@@ -2,6 +2,7 @@
 <table class="table">
     <thead>
         <tr>
+            <th>Detalle</th>
             <th>ISBN</th>
             <th>Título</th>
             <th>Autor</th>
@@ -15,10 +16,10 @@
     <td>{{libro.titulo}}</td>
     <td>{{libro.autor}}</td>
     <td>{{libro.paginas}}</td>
-
-
-    
+    <td><a class="btn btn-primary" [routerLink]="['/detallelibro', libro.isbn]">Detalle</a></td>
 </tr>
-}</tbody>
+}
+</tbody>
 </table>
 
+<a routerLink="/formulariolibros">Ir a formulario</a>
