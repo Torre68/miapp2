@@ -1,0 +1,27 @@
+<form>
+    <div class="mb-3">
+        <label for="isbn" class="form-label">ISBN</label>
+        <input for="text" class="form-control" id="isbn" name="isbn" [(ngModel)]="libro.isbn" placeholder="Ingrese el ISBN" required>
+        </div>
+
+        <div class="mb-3">
+        <label for="titulo" class="form-label">Título</label>
+        <input for="text" class="form-control" id="titulo" name="titulo"[(ngModel)]="libro.titulo" placeholder="Ingrese el Título" required>
+    </div>
+    <div class="mb-3">
+        <label for="autor" class="form-label">Autor</label>    
+        <input for="text" class="form-control" id="autor" name="autor"[(ngModel)]="libro.autor" placeholder="Ingrese el Autor" required>  
+    </div>
+    <div class="mb-3">
+        <label for="paginas" class="form-label">Páginas</label>
+        <input for="number" class="form-control" id="paginas" name="paginas" [(ngModel)]="libro.paginas" placeholder="Ingrese el paginas" required>
+      </div> 
+      <div class="d-flex justify-content-between">
+        <button type="submit" class="btn btn-success" (click)="insertar()">Guardar</button>
+        <button type="submit" class="btn btn-secondary">Limpiar</button>
+
+       </div>
+    
+
+
+</form>

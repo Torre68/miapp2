@@ -1,0 +1,24 @@
+<h1 class="display-1" style="text-align: center; color: blue;"><b>LIBROS DISPONIBLES</b></h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ISBN</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Páginas</th>
+        </tr>
+    </thead>
+    <tbody>
+@for (libro of listaLibros; track libro.isbn){
+    <tr>
+    <td>{{libro.isbn}} </td>
+    <td>{{libro.titulo}}</td>
+    <td>{{libro.autor}}</td>
+    <td>{{libro.paginas}}</td>
+
+
+    
+</tr>
+}</tbody>
+</table>
+
