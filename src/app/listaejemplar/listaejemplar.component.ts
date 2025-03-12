@@ -23,7 +23,7 @@ export class ListaejemplarComponent {
   this.ejemplarRestService.borrar(isbn, numero).subscribe(()=>{
     this.ejemplarRestService.buscarTodos().subscribe((datos)=>{
 
-      this.listaEjemplar=datos;2
+      this.listaEjemplar=datos;
     })
   });
     }
