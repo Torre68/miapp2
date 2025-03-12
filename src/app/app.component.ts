@@ -4,10 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { ListalibrosComponent } from './listalibros/listalibros.component';
 import { FormularioLibroComponent } from './formulario-libro/formulario-libro.component';
 import { DetallelibroComponent } from './detallelibro/detallelibro.component';
+import { ListaejemplarComponent } from './listaejemplar/listaejemplar.component';
+import { FormularioEjemplarComponent } from './formulario-ejemplar/formulario-ejemplar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ListalibrosComponent, FormularioLibroComponent,DetallelibroComponent],
+  imports: [RouterOutlet, ListalibrosComponent, FormularioLibroComponent,DetallelibroComponent, ListaejemplarComponent, FormularioEjemplarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -1,0 +1,26 @@
+<h1 class="display-1" style="text-align: center; color: blue;"><b>EJEMPLARES DISPONIBLES</b></h1>
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>ISBN</th>
+            <th>Número</th>
+            <th>Disponible</th>
+            <th>Borrar</th>
+        </tr>
+    </thead>
+    <tbody>
+@for (ejemplar of listaEjemplar; track ejemplar.isbn){
+    <tr>
+    <td>{{ejemplar.isbn}} </td>
+    <td>{{ejemplar.numero}}</td>
+    <td>{{ejemplar.disponible}}</td>
+    <td><button type="submit" class="btn btn-danger" (click)="borrar(ejemplar.isbn,ejemplar.numero)">Borrar</button></td>
+
+    
+</tr>
+}
+</tbody>
+</table>
+
+<a routerLink="/formularioejemplar">Ir a formulario</a>
