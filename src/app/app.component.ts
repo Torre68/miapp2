@@ -6,10 +6,11 @@ import { FormularioLibroComponent } from './formulario-libro/formulario-libro.co
 import { DetallelibroComponent } from './detallelibro/detallelibro.component';
 import { ListaejemplarComponent } from './listaejemplar/listaejemplar.component';
 import { FormularioEjemplarComponent } from './formulario-ejemplar/formulario-ejemplar.component';
+import { ResponsiveComponent } from './responsive/responsive.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ListalibrosComponent, FormularioLibroComponent,DetallelibroComponent, ListaejemplarComponent, FormularioEjemplarComponent],
+  imports: [RouterOutlet, ListalibrosComponent, FormularioLibroComponent,DetallelibroComponent, ListaejemplarComponent, FormularioEjemplarComponent, ResponsiveComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

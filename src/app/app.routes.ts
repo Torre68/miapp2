@@ -4,6 +4,7 @@ import { FormularioLibroComponent } from './formulario-libro/formulario-libro.co
 import { DetallelibroComponent } from './detallelibro/detallelibro.component';
 import { ListaejemplarComponent } from './listaejemplar/listaejemplar.component';
 import { FormularioEjemplarComponent } from './formulario-ejemplar/formulario-ejemplar.component';
+import { ResponsiveComponent } from './responsive/responsive.component';
 
 export const routes: Routes = [
 {path:"listalibros", component:ListalibrosComponent},
@@ -11,7 +12,7 @@ export const routes: Routes = [
 {path:"detallelibro/:isbn", component: DetallelibroComponent},
 {path:"listaejemplar", component:ListaejemplarComponent},
 {path:"formularioejemplar", component:FormularioEjemplarComponent},
-{path: "", component:ListaejemplarComponent}
+{path: "", component:ResponsiveComponent}
 
 
 
